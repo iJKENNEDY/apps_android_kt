@@ -4,6 +4,13 @@
 *.ap_
 *.aab
 
+# Archivos de ignores de proyectos
+Base_datos_222/.gitignore
+Mvvm_listFrases/.gitignore
+Mvvm_pokedex/.gitignore
+android_basic/.gitignore
+
+
 # Files for the ART/Dalvik VM
 *.dex
 
