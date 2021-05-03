@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ironman"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos persona"
+        android:layout_margin="11dp"
+        android:textSize="21sp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="#E1F5FE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:drawableLeft="@drawable/ic_baseline_back_hand_24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_lastnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="last-Nombre"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:drawableLeft="@drawable/ic_baseline_attach_email_24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_edtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="height"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:drawableLeft="@drawable/ic_baseline_block_24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="weight"
+            android:textSize="18sp"
+            android:paddingTop="6dp"
+            android:drawableLeft="@drawable/ic_baseline_assistant_direction_24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+        <EditText
+            android:id="@+id/txt_id_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="escribe el codigo a eliminar"
+            android:background="@color/purple_500"
+            android:inputType="number"
+            android:layout_gravity="start"
+            />
+        <Button
+            android:id="@+id/btn_eliminar"
+            android:layout_gravity="start|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="eliminar"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_insertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="♥insert♠"
+        android:textSize="19sp"
+        android:backgroundTint="@color/black"
+        android:layout_margin="8dp"
+        app:cornerRadius="19dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_modificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="☻update♫"
+        android:textSize="19sp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_margin="4dp"
+        app:cornerRadius="19dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#050F51"
+        android:text="♣-registro-♣"
+        android:textSize="19sp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_margin="3dp"
+        app:cornerRadius="19dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        android:background="#7A0334"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text_lista"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:hint="contenido"/>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
